@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: sans-serif;
+}
+
+.composition {
+    position: relative;
+    width: 595px;
+    height: 827px;
+    background-color: white;
+}
+
+/* Основные квадраты */
+.square {
+    position: absolute;
+    width: 149px;
+    height: 149px;
+    background-color: #FFD900;
+}
+
+.square-1 { top: 0; left: 0; }
+.square-2 { top: 0; left: 149px; }
+.square-3 { top: 0; left: 298px; }
+.square-4 { 
+    top: 0; 
+    left: 447px; 
+    background-color: #FBFBFB; 
+}
+
+/* Треугольники */
+.corner-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+/* Треугольники */
+.triangle-orange { 
+    border-color: transparent transparent #E74C16 transparent;
+    border-width: 0 0 149px 149px;
+    transform: rotate(-90deg);
+}
+
+.triangle-black { 
+    border-color: transparent transparent #131313 transparent;
+    border-width: 0 0 149px 149px;
+    transform: rotate(-90deg);
+}
+
+.triangle-1 { top: 0; left: 0; }
+.triangle-2 { top: 0; left: 149px; }
+.triangle-3 { top: 0; left: 298px; }
+.triangle-4 { top: 0; left: 447px; }
+
+/* Большой правый прямоугольник */
+.tall-rect {
+    position: absolute;
+    width: 149px;
+    height: 678px;
+    background-color: #FFD900;
+    top: 149px;
+    left: 447px;
+}
+
+/* Большой круг */
+.big-circle {
+    position: absolute;
+    width: 444px;
+    height: 444px;
+    background: #E74C16;
+    border-radius: 50%;
+    top: 369px;
+    left: 3px;
+}
+
+/* Круги справа */
+.circle-white {
+    position: absolute;
+    width: 148px;
+    height: 148px;
+    background: #FBFBFB;
+    border-radius: 50%;
+    top: 220px;
+    left: 447px;
+}
+
+.circle-black {
+    position: absolute;
+    width: 69px;
+    height: 71px;
+    background: #131313;
+    border-radius: 50%;
+    top: 258px;
+    left: 486px;
+}
+
+/* Синий прямоугольник */
+.blue-rect {
+    position: absolute;
+    width: 447px;
+    height: 219px;
+    background: #127AC0;
+    top: 149px;
+    left: 0;
+}
+
+/* Полукруги */
+.semicircle {
+    position: absolute;
+}
+
+.semicircle-top {
+    width: 448px;
+    height: 220px;
+    background: #FBFBFB;
+    border-radius: 223px 223px 0 0;
+    top: 149px;
+    left: 0;
+    transform: rotate(180deg);
+}
+
+.semicircle-bottom {
+    width: 148px;
+    height: 73px;
+    border-radius: 74px 74px 0 0;
+}
+
+.semicircle-white {
+    background: #FBFBFB;
+    top: 605px;
+    left: 447px;
+    transform: rotate(180deg);
+}
+
+.semicircle-orange {
+    background: #E74C16;
+    top: 532px;
+    left: 447px;
+    transform: rotate(180deg);
+}
+
+/* Полоса */
+.diagonal-stripe {
+    position: absolute;
+    width: 570px;
+    height: 40px;
+    background: #131313;
+    top: 566px;
+    left: -51px;
+    transform: rotate(-46deg);
+}
+
+/* Горизонтальные полосы */
+.stripe {
+    position: absolute;
+    width: 225px;
+    height: 36px;
+    background: #131313;
+    left: 0;
+}
+
+.stripe-1 { top: 149px; }
+.stripe-2 { top: 209px; }
+.stripe-3 { top: 271px; }
+.stripe-4 { top: 332px; }
+
+/* Нижний треугольник */
+.bottom-triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: transparent #137CC1 transparent transparent;
+    border-width: 149px 149px 0 0;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-90deg);
+}
